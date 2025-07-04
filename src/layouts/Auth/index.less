@@ -8,7 +8,7 @@
 
   .left {
     position: relative;
-    width: 576px;
+    width: 50%;
     overflow-y: auto;
 
     /* TODO wait for RGB
@@ -23,29 +23,37 @@
       height: 20px;
       text-align: right;
     }
+  }
 
-    .main {
-      margin-top: 10vh;
-      padding: 0 130px;
+  .main {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    width: 568px;
+    padding: 80px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 1px 1px 1px #ccc;
 
-      .top {
-        text-align: center;
+    .top {
+      text-align: center;
 
-        .header {
+      .header {
+        height: 56px;
+        line-height: 56px;
+        text-align: left;
+
+        a {
+          text-decoration: none;
+        }
+
+        .logo {
+          //width: 87px;
           height: 56px;
-          line-height: 56px;
-          text-align: left;
-
-          a {
-            text-decoration: none;
-          }
-
-          .logo {
-            //width: 87px;
-            height: 56px;
-            margin-right: 16px;
-            vertical-align: top;
-          }
+          margin-right: 16px;
+          vertical-align: top;
         }
       }
     }
@@ -53,9 +61,8 @@
 
   .right {
     position: relative;
-    flex: 1 1;
-    text-align: center;
-    background-color: #21242a;
+    width: 50%;
+    height: 100%;
   }
 }
 
